@@ -3,6 +3,6 @@ FROM alpine:3.12.0
 RUN apk add bash
 RUN apk add grep
 
-COPY conflictFinder /conflictFinder
+COPY secretScanner /secretScanner
 
-ENTRYPOINT ["/conflictFinder"]
+ENTRYPOINT ["/secretScanner"]
